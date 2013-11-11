@@ -5,7 +5,7 @@
     <tr>
       <th>Name</th>
       <th>Attendance</th>
-      <th></th>
+      <th>Memo</th>
       <th></th>
       <th></th>
       <th></th>
@@ -17,8 +17,8 @@
       <tr>
         <td><%= user.name %></td>
         <td><%= user.at_j %></td>
+        <td><%= user.memo %></td>
         <td><%= link_to '入/退', toggle_user_path(user) %></td>
-        <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>

@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20131107145255) do
   create_table "users", force: true do |t|
     t.string   "name"
     t.boolean  "attendance"
+    t.string   "memo"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
